@@ -1,0 +1,212 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red131\green148\blue149;\red0\green0\blue0;\red61\green73\blue78;
+\red17\green134\blue139;\red9\green74\blue76;\red52\green62\blue66;\red199\green63\blue5;\red96\green126\blue3;
+}
+{\*\expandedcolortbl;;\cssrgb\c58431\c64706\c65098;\csgray\c0\c0;\cssrgb\c30588\c35686\c38039;
+\cssrgb\c0\c59216\c61569;\cssrgb\c0\c36078\c37255;\cssrgb\c26275\c30980\c32941;\cssrgb\c82745\c32941\c0;\cssrgb\c44706\c55686\c0;
+}
+\margl1440\margr1440\vieww21560\viewh23140\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 /*/////////////////////\cf4 \strokec4 \
+\cf2 \strokec2 Last midlo edit\cf4 \strokec4 \
+\
+\cf2 \strokec2 *//////////////////////\cf4 \strokec4 \
+\
+\cf2 \strokec2 //#include <ARDBOX-Relay.h>\cf4 \strokec4 \
+\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  R0_1 = \cf6 \strokec6 10\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  R0_2 = \cf6 \strokec6 9\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  R0_3 = \cf6 \strokec6 6\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  R0_4 = \cf6 \strokec6 5\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  R0_5 = \cf6 \strokec6 3\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  R0_6 = \cf6 \strokec6 7\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  R0_7 = \cf6 \strokec6 0\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  R0_8 = \cf6 \strokec6 1\cf4 \strokec4 ;\
+\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  I0_0 = \cf6 \strokec6 2\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  I0_1 = \cf6 \strokec6 12\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  I0_2 = \cf6 \strokec6 4\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  I0_3 = \cf6 \strokec6 8\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  I0_4 = \cf6 \strokec6 18\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  I0_5 = \cf6 \strokec6 19\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  I0_6 = \cf6 \strokec6 20\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  I0_7 = \cf6 \strokec6 21\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  I0_8 = \cf6 \strokec6 22\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  I0_9 = \cf6 \strokec6 23\cf4 \strokec4 ;\
+\
+\cf2 \strokec2 //OUT\cf4 \strokec4 \
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  DustCollectorRelay = \cf7 \strokec7 (\cf4 \strokec4 R0_4\cf7 \strokec7 )\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  BlowerRelay = \cf7 \strokec7 (\cf4 \strokec4 R0_6\cf7 \strokec7 )\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  VaneFeederRelay = \cf7 \strokec7 (\cf4 \strokec4 R0_5\cf7 \strokec7 )\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  VibratorRelay = \cf7 \strokec7 (\cf4 \strokec4 R0_7\cf7 \strokec7 )\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  PulsersRelay = \cf7 \strokec7 (\cf4 \strokec4 R0_8\cf7 \strokec7 )\cf4 \strokec4 ;\
+\cf2 \strokec2 //IN\cf4 \strokec4 \
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  BindicatorInput = \cf7 \strokec7 (\cf4 \strokec4 I0_6\cf7 \strokec7 )\cf4 \strokec4 ;\
+\cf5 \strokec5 const\cf4 \strokec4  \cf5 \strokec5 int\cf4 \strokec4  PlantOnInput = \cf7 \strokec7 (\cf4 \strokec4 I0_7\cf7 \strokec7 )\cf4 \strokec4 ;\
+\
+\cf5 \strokec5 int\cf4 \strokec4  ShutdownDelay = \cf6 \strokec6 15000\cf4 \strokec4 ;\
+\cf5 \strokec5 int\cf4 \strokec4  StartUpDelay = \cf6 \strokec6 5000\cf4 \strokec4 ;\cf2 \strokec2  //sec between starting motors to prevent excessive inrush current reset to 5 sec\cf4 \strokec4 \
+\cf5 \strokec5 unsigned\cf4 \strokec4  \cf5 \strokec5 long\cf4 \strokec4  TimeToEmptyDustCollecter = \cf6 \strokec6 420000\cf4 \strokec4 ;\cf2 \strokec2  // how long to run 7 min 420,000ms\cf4 \strokec4 \
+\
+\cf5 \strokec5 unsigned\cf4 \strokec4  \cf5 \strokec5 long\cf4 \strokec4  PulserTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+\cf5 \strokec5 unsigned\cf4 \strokec4  \cf5 \strokec5 long\cf4 \strokec4  MainTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+\cf5 \strokec5 unsigned\cf4 \strokec4  \cf5 \strokec5 long\cf4 \strokec4  VibTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+\
+\cf5 \strokec5 int\cf4 \strokec4  VibratorPulseOn = \cf6 \strokec6 5000\cf4 \strokec4 ;\cf2 \strokec2  //Vib on duration\cf4 \strokec4 \
+\cf5 \strokec5 unsigned\cf4 \strokec4  \cf5 \strokec5 long\cf4 \strokec4  VibratorPulseOff = \cf6 \strokec6 55000\cf4 \strokec4 ;\cf2 \strokec2  //Vib off duration\cf4 \strokec4 \
+\
+\
+\cf5 \strokec5 unsigned\cf4 \strokec4  \cf5 \strokec5 long\cf4 \strokec4  PulsersRelayCloseTime = \cf6 \strokec6 180000\cf4 \strokec4 ;\cf2 \strokec2 //Relay closed duing automated bag cleaning 16,400ms per row *10 rows = 180,000\cf4 \strokec4 \
+\cf5 \strokec5 unsigned\cf4 \strokec4  \cf5 \strokec5 long\cf4 \strokec4  PulsersInterval = \cf6 \strokec6 3420000\cf4 \strokec4 ;\cf2 \strokec2  //1000ms * 60Sec * 60Min = 3,600,000----------how often to clean bags **minus** pulsers run time 57min\cf4 \strokec4 \
+\
+\
+\cf5 \strokec5 void\cf4 \strokec4  \cf8 \strokec8 setup\cf7 \strokec7 ()\cf4 \strokec4  \
+\cf7 \strokec7 \{\cf4 \strokec4 \
+  \cf8 \strokec8 pinMode\cf7 \strokec7 (\cf4 \strokec4 DustCollectorRelay, OUTPUT\cf7 \strokec7 )\cf4 \strokec4 ;\
+  \cf8 \strokec8 pinMode\cf7 \strokec7 (\cf4 \strokec4 BlowerRelay, OUTPUT\cf7 \strokec7 )\cf4 \strokec4 ;\
+  \cf8 \strokec8 pinMode\cf7 \strokec7 (\cf4 \strokec4 VaneFeederRelay, OUTPUT\cf7 \strokec7 )\cf4 \strokec4 ;\
+  \cf8 \strokec8 pinMode\cf7 \strokec7 (\cf4 \strokec4 PulsersRelay, OUTPUT\cf7 \strokec7 )\cf4 \strokec4 ;\
+  \cf8 \strokec8 pinMode\cf7 \strokec7 (\cf4 \strokec4 VibratorRelay, OUTPUT\cf7 \strokec7 )\cf4 \strokec4 ;\
+\
+  \cf8 \strokec8 pinMode\cf7 \strokec7 (\cf4 \strokec4 BindicatorInput, INPUT\cf7 \strokec7 )\cf4 \strokec4 ;\
+  \cf8 \strokec8 pinMode\cf7 \strokec7 (\cf4 \strokec4 PlantOnInput, INPUT\cf7 \strokec7 )\cf4 \strokec4 ;\
+  \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 begin\cf7 \strokec7 (\cf6 \strokec6 9600\cf7 \strokec7 )\cf4 \strokec4 ;\
+  \cf8 \strokec8 delay\cf7 \strokec7 (\cf6 \strokec6 3000\cf7 \strokec7 )\cf4 \strokec4 ;\
+  PulserTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+\cf7 \strokec7 \}\cf4 \strokec4 \
+\cf5 \strokec5 void\cf4 \strokec4  \cf8 \strokec8 loop\cf7 \strokec7 ()\cf4 \strokec4 \
+\cf7 \strokec7 \{\cf4 \strokec4 \
+\
+  \cf9 \strokec9 if\cf7 \strokec7 (\cf8 \strokec8 digitalRead\cf7 \strokec7 (\cf4 \strokec4 PlantOnInput\cf7 \strokec7 )\cf4 \strokec4  == HIGH\cf7 \strokec7 )\cf4 \strokec4 \
+  \cf7 \strokec7 \{\cf4 \strokec4 \
+    \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 (\cf6 \strokec6 ""\cf7 \strokec7 )\cf4 \strokec4 ;\
+    \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 (\cf6 \strokec6 "plant On"\cf7 \strokec7 )\cf4 \strokec4 ;\
+    \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 print\cf7 \strokec7 (\cf6 \strokec6 "Pulsers Timer 57min or 3,420 Sec   "\cf7 \strokec7 )\cf4 \strokec4 ;\
+    \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 print\cf7 \strokec7 ((\cf5 \strokec5 unsigned\cf4 \strokec4  \cf5 \strokec5 long\cf7 \strokec7 )(\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - PulserTimeLastReset\cf7 \strokec7 )\cf4 \strokec4  * \cf6 \strokec6 0.001\cf7 \strokec7 )\cf4 \strokec4 ;\
+    \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 (\cf6 \strokec6 "sec Elapsed"\cf7 \strokec7 )\cf4 \strokec4 ;\
+\
+    \cf9 \strokec9 if\cf4 \strokec4  \cf7 \strokec7 ((\cf5 \strokec5 unsigned\cf4 \strokec4  \cf5 \strokec5 long\cf7 \strokec7 )(\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - PulserTimeLastReset >= PulsersInterval\cf7 \strokec7 ))\cf2 \strokec2 //time to run pulsers\cf4 \strokec4 \
+    \cf7 \strokec7 \{\cf4 \strokec4 \
+      \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 (\cf6 \strokec6 "Pulsers Triggered"\cf7 \strokec7 )\cf4 \strokec4 ;\
+      \cf8 \strokec8 digitalWrite\cf7 \strokec7 (\cf4 \strokec4 PulsersRelay, HIGH\cf7 \strokec7 )\cf4 \strokec4 ;\
+      \cf8 \strokec8 delay\cf7 \strokec7 (\cf4 \strokec4 PulsersRelayCloseTime\cf7 \strokec7 )\cf4 \strokec4 ;\
+      \cf8 \strokec8 digitalWrite\cf7 \strokec7 (\cf4 \strokec4 PulsersRelay, LOW\cf7 \strokec7 )\cf4 \strokec4 ;\
+      PulserTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+    \cf7 \strokec7 \}\cf4 \strokec4 \
+\
+    \cf9 \strokec9 if\cf4 \strokec4  \cf7 \strokec7 (\cf8 \strokec8 digitalRead\cf7 \strokec7 (\cf4 \strokec4 BindicatorInput\cf7 \strokec7 )\cf4 \strokec4  == HIGH\cf7 \strokec7 )\cf4 \strokec4 \
+    \cf7 \strokec7 \{\cf2 \strokec2   //Begin startup process\cf4 \strokec4 \
+      \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 (\cf6 \strokec6 "Bindicator Triggered, starting up"\cf7 \strokec7 )\cf4 \strokec4 ;\
+\
+      \cf8 \strokec8 delay\cf7 \strokec7 (\cf6 \strokec6 500\cf7 \strokec7 )\cf4 \strokec4 ;\
+      \cf8 \strokec8 digitalWrite\cf7 \strokec7 (\cf4 \strokec4 DustCollectorRelay, HIGH\cf7 \strokec7 )\cf4 \strokec4 ;\cf2 \strokec2 //ON\cf4 \strokec4 \
+\
+      MainTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+      \cf9 \strokec9 while\cf4 \strokec4  \cf7 \strokec7 (\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - MainTimeLastReset <= StartUpDelay\cf7 \strokec7 )\cf2 \strokec2 // delay 5 sec\cf4 \strokec4 \
+      \cf7 \strokec7 \{\}\cf4 \strokec4 \
+\
+      \cf8 \strokec8 digitalWrite\cf7 \strokec7 (\cf4 \strokec4 BlowerRelay, HIGH\cf7 \strokec7 )\cf4 \strokec4 ;\cf2 \strokec2 //ON\cf4 \strokec4 \
+      \
+      MainTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+      \cf9 \strokec9 while\cf4 \strokec4  \cf7 \strokec7 (\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - MainTimeLastReset <= StartUpDelay\cf7 \strokec7 )\cf2 \strokec2 // delay 5 sec\cf4 \strokec4 \
+      \cf7 \strokec7 \{\}\cf4 \strokec4 \
+\
+      \cf8 \strokec8 digitalWrite\cf7 \strokec7 (\cf4 \strokec4 VaneFeederRelay, HIGH\cf7 \strokec7 )\cf4 \strokec4 ;\cf2 \strokec2 //ON\cf4 \strokec4 \
+\
+      \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 (\cf6 \strokec6 "Startup Complete"\cf7 \strokec7 )\cf4 \strokec4 ;\
+      \
+      MainTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+      \cf9 \strokec9 while\cf4 \strokec4  \cf7 \strokec7 (\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - MainTimeLastReset <= StartUpDelay\cf7 \strokec7 )\cf2 \strokec2 // delay 5 sec\cf4 \strokec4 \
+      \cf7 \strokec7 \{\}\cf4 \strokec4 \
+\
+      MainTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+      \cf9 \strokec9 while\cf4 \strokec4  \cf7 \strokec7 (\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - MainTimeLastReset <= TimeToEmptyDustCollecter\cf7 \strokec7 )\cf2 \strokec2 // Empty for 10 min\cf4 \strokec4 \
+      \cf7 \strokec7 \{\cf4 \strokec4 \
+        \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 print\cf7 \strokec7 (\cf6 \strokec6 "Emptying... Time1 elapsed = "\cf7 \strokec7 )\cf4 \strokec4 ;\
+        \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 (\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - MainTimeLastReset\cf7 \strokec7 )\cf4 \strokec4 ;\
+        \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 ()\cf4 \strokec4 ;\
+\
+        \cf8 \strokec8 digitalWrite\cf7 \strokec7 (\cf4 \strokec4 VibratorRelay, HIGH\cf7 \strokec7 )\cf4 \strokec4 ;\
+        VibTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+\
+        \cf9 \strokec9 while\cf7 \strokec7 (\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - VibTimeLastReset <= VibratorPulseOn\cf7 \strokec7 )\cf4 \strokec4 \
+        \cf7 \strokec7 \{\cf4 \strokec4 \
+          \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 print\cf7 \strokec7 (\cf6 \strokec6 "Vibrator On... Time on = "\cf7 \strokec7 )\cf4 \strokec4 ;\
+          \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 print\cf7 \strokec7 (\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - VibTimeLastReset\cf7 \strokec7 )\cf4 \strokec4 ;\
+          \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 ()\cf4 \strokec4 ;\
+          \cf8 \strokec8 delay\cf7 \strokec7 (\cf6 \strokec6 50\cf7 \strokec7 )\cf4 \strokec4 ;\
+        \cf7 \strokec7 \}\cf4 \strokec4 \
+        \cf8 \strokec8 digitalWrite\cf7 \strokec7 (\cf4 \strokec4 VibratorRelay, LOW\cf7 \strokec7 )\cf4 \strokec4 ;\
+        VibTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+\
+        \cf9 \strokec9 while\cf7 \strokec7 (\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - VibTimeLastReset <= VibratorPulseOff\cf7 \strokec7 )\cf4 \strokec4 \
+        \cf7 \strokec7 \{\cf4 \strokec4 \
+          \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 print\cf7 \strokec7 (\cf6 \strokec6 "Vibrator Off... Time off = "\cf7 \strokec7 )\cf4 \strokec4 ;\
+          \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 print\cf7 \strokec7 (\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - VibTimeLastReset\cf7 \strokec7 )\cf4 \strokec4 ;\
+          \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 print\cf7 \strokec7 (\cf6 \strokec6 "      Elapsed Time out of 600,000= "\cf7 \strokec7 )\cf4 \strokec4 ;\
+          \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 print\cf7 \strokec7 (\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - MainTimeLastReset\cf7 \strokec7 )\cf4 \strokec4 ;\
+          \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 ()\cf4 \strokec4 ;\
+          \cf8 \strokec8 delay\cf7 \strokec7 (\cf6 \strokec6 50\cf7 \strokec7 )\cf4 \strokec4 ;\
+        \cf7 \strokec7 \}\cf4 \strokec4 \
+      \cf7 \strokec7 \}\cf4 \strokec4 \
+      \
+      \cf8 \strokec8 digitalWrite\cf7 \strokec7 (\cf4 \strokec4 VibratorRelay, LOW\cf7 \strokec7 )\cf4 \strokec4 ;\
+\
+      \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 (\cf6 \strokec6 "Shutting down"\cf7 \strokec7 )\cf4 \strokec4 ;\
+\cf2 \strokec2       //Begin Shutdown\cf4 \strokec4 \
+\
+      \cf8 \strokec8 digitalWrite\cf7 \strokec7 (\cf4 \strokec4 VaneFeederRelay, LOW\cf7 \strokec7 )\cf4 \strokec4 ;\
+      MainTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+      \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 (\cf6 \strokec6 "VaneFeeder Off"\cf7 \strokec7 )\cf4 \strokec4 ;\
+      \cf9 \strokec9 while\cf4 \strokec4  \cf7 \strokec7 (\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - MainTimeLastReset <= ShutdownDelay\cf7 \strokec7 )\cf2 \strokec2 // delay 15 sec\cf4 \strokec4 \
+      \cf7 \strokec7 \{\}\cf4 \strokec4 \
+      \
+      \cf8 \strokec8 digitalWrite\cf7 \strokec7 (\cf4 \strokec4 BlowerRelay, LOW\cf7 \strokec7 )\cf4 \strokec4 ;\
+      MainTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+      \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 (\cf6 \strokec6 "Blower Off"\cf7 \strokec7 )\cf4 \strokec4 ;\
+      \cf9 \strokec9 while\cf4 \strokec4  \cf7 \strokec7 (\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - MainTimeLastReset <= ShutdownDelay\cf7 \strokec7 )\cf2 \strokec2 // delay 15 sec\cf4 \strokec4 \
+      \cf7 \strokec7 \{\}\cf4 \strokec4 \
+\
+      \cf8 \strokec8 digitalWrite\cf7 \strokec7 (\cf4 \strokec4 DustCollectorRelay, LOW\cf7 \strokec7 )\cf4 \strokec4 ;\
+      MainTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+      \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 (\cf6 \strokec6 "DustCollector Off"\cf7 \strokec7 )\cf4 \strokec4 ;\
+      \cf9 \strokec9 while\cf4 \strokec4  \cf7 \strokec7 (\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - MainTimeLastReset <= ShutdownDelay\cf7 \strokec7 )\cf2 \strokec2 // delay 15 sec to stop suction + pulsers 15 sec self delay\cf4 \strokec4 \
+      \cf7 \strokec7 \{\}\cf4 \strokec4 \
+\
+      \cf8 \strokec8 digitalWrite\cf7 \strokec7 (\cf4 \strokec4 PulsersRelay, HIGH\cf7 \strokec7 )\cf4 \strokec4 ;\
+      MainTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+      \cf9 \strokec9 while\cf4 \strokec4  \cf7 \strokec7 (\cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4  - MainTimeLastReset <= PulsersRelayCloseTime\cf7 \strokec7 )\cf4 \strokec4 ;\cf2 \strokec2  //delay 150 sec\cf4 \strokec4 \
+      \cf7 \strokec7 \{\cf4 \strokec4 \
+        \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 print\cf7 \strokec7 (\cf6 \strokec6 "Pulsers Running"\cf7 \strokec7 )\cf4 \strokec4 ;\
+        \cf8 \strokec8 delay\cf7 \strokec7 (\cf6 \strokec6 50\cf7 \strokec7 )\cf4 \strokec4 ;\
+      \cf7 \strokec7 \}\cf4 \strokec4 \
+    \
+      \cf8 \strokec8 digitalWrite\cf7 \strokec7 (\cf4 \strokec4 PulsersRelay, LOW\cf7 \strokec7 )\cf4 \strokec4 ;\
+      PulserTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+      \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 (\cf6 \strokec6 "cycle Done"\cf7 \strokec7 )\cf4 \strokec4 ;\
+    \cf7 \strokec7 \}\cf4 \strokec4 \
+    \
+\
+    \cf9 \strokec9 else\cf4 \strokec4  \
+    \cf7 \strokec7 \{\cf4 \strokec4 \
+      \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 (\cf6 \strokec6 "Bindicator off, waiting"\cf7 \strokec7 )\cf4 \strokec4 ;\
+      \cf8 \strokec8 delay\cf7 \strokec7 (\cf6 \strokec6 50\cf7 \strokec7 )\cf4 \strokec4 ;\
+    \cf7 \strokec7 \}\cf4 \strokec4 \
+\
+    \
+  \cf7 \strokec7 \}\cf4 \strokec4 \
+  \
+  \cf9 \strokec9 else\cf4 \strokec4 \
+  \cf7 \strokec7 \{\cf4 \strokec4 \
+    \cf8 \strokec8 Serial\cf4 \strokec4 .\cf8 \strokec8 println\cf7 \strokec7 (\cf6 \strokec6 "Plant off, waiting"\cf7 \strokec7 )\cf4 \strokec4 ;\
+    PulserTimeLastReset = \cf8 \strokec8 millis\cf7 \strokec7 ()\cf4 \strokec4 ;\
+    \cf8 \strokec8 delay\cf7 \strokec7 (\cf6 \strokec6 50\cf7 \strokec7 )\cf4 \strokec4 ;\
+  \cf7 \strokec7 \}\cf4 \strokec4 \
+\cf7 \strokec7 \}\cf4 \strokec4 \
+\
+\
+}
