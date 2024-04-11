@@ -67,7 +67,6 @@ void setup()
 }
 void loop() 
 {
-
   if(digitalRead(PlantOnInput) == HIGH)
   {
     Serial.println("plant On");
@@ -80,7 +79,6 @@ void loop()
       digitalWrite(PulsersRelay, LOW);
       PulserTimeLastReset = millis();
     }
-
     if (digitalRead(BindicatorInput) == HIGH)
     {  //Begin startup process
       Serial.println("Bindicator Triggered, starting up");
@@ -172,21 +170,13 @@ void loop()
       while (millis() - MainTimeLastReset <= PulsersCycleTime); 
       {}
     }
-    
-
     else 
-    {
-      Serial.println("bindicator off, waiting");
+    {Serial.println("bindicator off, waiting");
       delay(80);
     }
-
-    
   }
-  
   else
-  {
-    Serial.println("Plant off");
+  {Serial.println("Plant off");
     delay(80);
   }
-
 }
