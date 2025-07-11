@@ -2,7 +2,7 @@
 //                        // 
 //    JACOB BURGHART &    //
 //     JOHN ANDERSON      //
-//  UPDATED JUN 27 2022   // 
+//  UPDATED JUL 14 2025   // 
 // SCHEMATICS AVAILIBLE   //
 ////////////////////////////
 
@@ -10,8 +10,8 @@
 
 //pump sucks air at 24 inches
 //pit overflows at 16 inches
-const int highLevel = 18;
-const int lowLevel = 22;
+const int highLevel = 17;
+const int lowLevel = 20;
 const int AlarmHigh = 5;
 const int AlarmLow = 30;
 
@@ -72,8 +72,6 @@ void loop()
     {
       delay(1000); // Wait for .2 sec while water is above low level to avoid const sampling
       Distance = (Mulitplier * readUltrasonicDistance(echo, trigger));
-      Serial.print("NORMAL OPERATION   UPTIME SEC. = ");
-      Serial.println(millis()/1000);
       Serial.println("EMPTYING");
       Serial.print(Distance);
       Serial.println(" Current measured distance_Normal=5 to 30");
@@ -117,8 +115,6 @@ void loop()
     if ((Distance <= AlarmHigh) || (Distance >= AlarmLow) || (digitalRead(lowWaterSensor) == LOW) || (digitalRead(overfillWaterSensor) == HIGH))//trigger alarm
     {
       digitalWrite(Alarm, HIGH);
-      Serial.print("UPTIME SEC. = ");
-      Serial.println(millis()/1000);
       Serial.println("ERROR");
       Serial.print(Distance);
       Serial.println(" <<< Current measured distance_Normal=5 to 30");
@@ -138,8 +134,6 @@ void loop()
         {
           digitalWrite(Alarm, LOW);
         }
-      Serial.print("NORMAL OPERATION   UPTIME SEC. = ");
-      Serial.println(millis()/1000);
       Serial.print(Distance);
       Serial.println(" <<< Current measured distance_Normal=5 to 30");
       Serial.print(digitalRead(overfillWaterSensor));
