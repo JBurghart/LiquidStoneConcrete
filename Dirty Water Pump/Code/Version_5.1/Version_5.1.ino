@@ -135,7 +135,7 @@ void loop()
         {
           digitalWrite(Alarm, LOW);
         }
-      Serial.print("NORMAL OPERATION "); ");
+      Serial.print("NORMAL OPERATION "); 
       Serial.println("WAITING");
       Serial.print(Distance);
       Serial.println(" <<< Current measured distance_Normal=5 to 30");
