@@ -72,6 +72,7 @@ void loop()
     {
       delay(1000); // Wait for .2 sec while water is above low level to avoid const sampling
       Distance = (Mulitplier * readUltrasonicDistance(echo, trigger));
+      Serial.print("NORMAL OPERATION ");
       Serial.println("EMPTYING");
       Serial.print(Distance);
       Serial.println(" Current measured distance_Normal=5 to 30");
@@ -106,7 +107,7 @@ void loop()
   
   } 
   
-  else /////serial outputs during wait///////
+  else //waiting till water is high
   {
     delay(50); // Wait for .05s to be responsive
     
@@ -128,12 +129,14 @@ void loop()
 
       delay(500);
     }
-    else
+    else //normal waiting state
     {
       if (digitalRead(Alarm)==HIGH)
         {
           digitalWrite(Alarm, LOW);
         }
+      Serial.print("NORMAL OPERATION "); ");
+      Serial.println("WAITING");
       Serial.print(Distance);
       Serial.println(" <<< Current measured distance_Normal=5 to 30");
       Serial.print(digitalRead(overfillWaterSensor));
