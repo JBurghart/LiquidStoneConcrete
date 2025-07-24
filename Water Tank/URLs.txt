@@ -1,0 +1,7 @@
+ultrasonic sensor https://maxbotix.com/products/mb7060?variant=48771230826783
+Wireless Transceiver https://a.co/d/71vYefH
+Level Shifter RS232 https://www.digikey.com/en/products/detail/adafruit-industries-llc/5987/24713837
+nRF24L01+ Arduino Shield https://www.digikey.com/en/products/detail/ptsolns/PTS-00154-211/25573202
+Arduino Breakout Board https://www.digikey.com/en/products/detail/ptsolns/PTS-00153-211/19116270
+Radio Amplifier https://a.co/d/6Oc9icp
+Arduino Uno R4 Minima
