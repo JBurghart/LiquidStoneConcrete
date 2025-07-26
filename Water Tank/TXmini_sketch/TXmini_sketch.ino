@@ -1,7 +1,8 @@
 #include <SPI.h>
 #include <RF24.h>
 
-RF24 radio(9, 10); // CE, CSN
+
+RF24 radio(7, 10); // CE, CSN
 const uint64_t address = 0xE8E8F0F0E1LL;
 
 int valueToSend = 0;
@@ -10,7 +11,8 @@ int direction = 1;  // 1 = up, -1 = down
 void setup() {
   Serial.begin(9600);
   radio.begin();
-  radio.setPALevel(RF24_PA_HIGH);
+  radio.setChannel(115); 
+  radio.setPALevel(RF24_PA_LOW);
   radio.setDataRate(RF24_250KBPS);
   radio.openWritingPipe(address);
   radio.stopListening();
