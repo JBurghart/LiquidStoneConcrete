@@ -2,7 +2,7 @@
 #include <RF24.h>
 RF24 radio(7, 10); // CE, CSN
 //RF24 radio(9, 10);  // CE, CSN
-const uint64_t address = 0xE8E8F0F0E1LL;  // Must match transmitter
+const uint64_t address = 0xE8E8F0F0E1LL;  
 
 void setup() {
   Serial.begin(9600);        

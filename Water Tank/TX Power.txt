@@ -1,4 +1,0 @@
-- TX
-RS 232 3mA at 5V
-Transceiver antenna 100mW at 3.3V
-

@@ -12,7 +12,7 @@ void setup() {
   Serial.begin(9600);
   radio.begin();
   radio.setChannel(115); 
-  radio.setPALevel(RF24_PA_LOW);
+  radio.setPALevel(RF24_PA_HIGH);
   radio.setDataRate(RF24_250KBPS);
   radio.openWritingPipe(address);
   radio.stopListening();

@@ -1,0 +1,8 @@
+analog_sketch               // tests analog output of ultrasonic sensor
+ComTest                     // tests transmission to PC app from RX 
+RX_sketch                   // RX sketch includes % calculations from raw distance from TX
+RXmini_sketch               // RX sketch recieves any number and sends straight to PC, ***currently in use***
+Sonar-mini_sketch           // tests digital output from ultrasonic sensor - did not work
+TX-main_sketch              // full TX, uses rs232 from ultrasonic sensor, raw distance output, SoftwareSerial
+TX-sonar-analog_sketch      // full TX, uses analog from ultrasonic sensor, raw distance output, ***currently in use***
+TXmini_sketch               // tests TX, sends rotating numbers over radio to RX
